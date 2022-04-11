@@ -5,9 +5,14 @@ class Car {
         this.model = model;
         this.year = year;
     }
-    performMainenance() {
 
-        console.log("Maintenance complete")
+    performMaintenance() {
+
+        setTimeout(function () {
+            console.log("Maintenance complete")
+        }, 3000);
+     
+       
 
     }
     honk() {
@@ -20,14 +25,16 @@ class Car {
 
 
 let mySweetRide = new Car("pontiac", "Fiero", 1988);
-mySweetRide.honk()
 
+mySweetRide.honk()
+mySweetRide.performMaintenance()
 
 
 if (mySweetRide)
     setTimeout(function () {
-        mySweetRide.performMainenance()
+        mySweetRide.performMaintenance()
     }, 3000);
+
 
 
 
